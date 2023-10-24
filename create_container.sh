@@ -215,7 +215,7 @@ pct push $CTID commit_switcher.sh /root/commit_switcher.sh -perms 755
 pct push $CTID configure_tuya-convert.sh /root/configure_tuya-convert.sh -perms 755
 pct push $CTID install_tuya-convert.sh /root/install_tuya-convert.sh -perms 755
 pct push $CTID login.sh /root/login.sh -perms 755
-#pct exec $CTID /root/install_tuya-convert.sh $LANG
+pct exec $CTID /root/install_tuya-convert.sh $LANG
 pct stop $CTID
 
 info "Successfully created tuya-convert LXC to $CTID."
