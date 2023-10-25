@@ -19,5 +19,5 @@ if [ "$WORKING_COMMIT" != "$LATEST_COMMIT" ]; then
     3>&1 1>&2 2>&3
   ) && /root/commit_switcher.sh
 fi
-./start_flash.sh
+#./start_flash.sh
 echo "tuya-convert exited with code:$?"
