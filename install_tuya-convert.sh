@@ -74,7 +74,7 @@ cd tuya-convert
 msg "Inst DNSMAAQ etc"
 apt-get install -qqy git iw dnsmasq rfkill hostapd screen curl build-essential python3-pip python3-setuptools python3-wheel python3-dev mosquitto haveged net-tools libssl-dev &>/dev/null
 msg "python3 pip install"
-python3 -m pip install --upgrade paho-mqtt tornado git+https://github.com/drbild/sslpsk.git pycryptodomex &>/dev/null
+-H python3 -m pip install --upgrade paho-mqtt tornado git+https://github.com/drbild/sslpsk.git pycryptodomex &>/dev/null
 
 msg "disable DNSMAQ & MOSQUITTO"
 systemctl disable dnsmasq &>/dev/null
