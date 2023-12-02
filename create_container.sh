@@ -192,7 +192,7 @@ ARCH=$(dpkg --print-architecture)
 HOSTNAME=tuya-convert
 TEMPLATE_STRING="local:vztmpl/${TEMPLATE}"
 pct create $CTID $TEMPLATE_STRING -arch $ARCH -cores 1 -hostname $HOSTNAME \
-  -net0 name=eth0,bridge=vmbr0,ip=dhcp -ostype $OSTYPE \
+  -net0 name=eth0,bridge=vmbr0,ip=192.168.12.212/24,dns=192.168.12.1 -ostype $OSTYPE \
   -rootfs $ROOTFS -storage $STORAGE >/dev/null
 
 # Pass network interface to LXC
